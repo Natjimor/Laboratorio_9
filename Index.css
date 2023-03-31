@@ -1,0 +1,16 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contenedor{
+    display: flex;
+}
+#User_logo{
+    width: 50px;
+}
+.Text{
+    font-family: 'Acme', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Outfit', sans-serif;
+}
