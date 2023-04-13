@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <link rel="stylesheet" href="Index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Josefin+Sans:wght@500;700&family=Outfit&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="Comment_Bar">
+        <div id="Container_User">
+            <img id="User_logo" src="User.png" alt="User_logo">
+            <div id="Comment_Box" onclick="MostrarModal()">
+                <h4 id="Text">¿Qué estas pensando, Natalia?</h4>
+            </div>
+        </div>
+        <div id="Comments_Container">
+
+        </div>
+    </div>
+    <div id="Comments_Box" class="No_Add_Comment">
+        <div id="Superior">
+            <h4>Crear Publicación</h4>
+            <i id="Icon_X" class="fa-solid fa-circle-xmark" onclick="OcultarModal()"></i>
+        </div>
+        <div id="inferior">
+            <hr>
+            <div id="User_part">
+                <img id="User_logo_Small" src="User.png" alt="User_logo">
+                <h5 id="Text_User">Natalia Jimenez Orozco</h5>
+            </div>
+            <div id="Comments">
+                <textarea name="Make_a_Comment" id="MakeComment" cols="30" rows="10" placeholder="¿Qué estás pensando, Natalia?" oninput="ActivarBoton()"></textarea>
+                <button id="Post_button" class="Post_desactivate" onclick="CrearPublicacion()"">Publicar</button>
+            </div>
+        </div>
+    </div>
+    <script src="Index.js"></script>
+</body>
+</html>

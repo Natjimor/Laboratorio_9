@@ -1,16 +1,185 @@
 body{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color:#000020;
+    position: relative;
 }
-#contenedor{
+.blur {
+    filter: blur(20px);
+}
+#Container_User{
+    background-color: rgba(240, 248, 255, 0.197);
+    width: 30vw;
+    height: 10vh;
+    border-radius: 15px;
     display: flex;
+    align-items: center;
+    margin-top: 30px;
 }
 #User_logo{
-    width: 50px;
+    width: 4vw;
+    height: 4vw;
+    padding-left: 30px;
+    padding-right: 20px;
 }
-.Text{
+#Comment_Box{
+    background-color: rgba(240, 248, 255, 0.199);
+    width: 20.5vw;
+    height: 5.5vh;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+
+}
+#Text{
     font-family: 'Acme', sans-serif;
     font-family: 'Josefin Sans', sans-serif;
     font-family: 'Outfit', sans-serif;
+    padding-left: 20px;
+    color: #37023a;
+}
+#Comments_Container{
+    float: right;
+    word-break:break-all;
+    width: 30vw;
+    float: right;
+    word-break:break-all;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.Add_Comment{
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(164, 172, 215);
+    width: 25vw;
+    border-radius: 20px;
+    box-shadow: black 2px 0px 15px;
+    position: absolute;
+    top: 180px;
+}
+.No_Add_Comment{
+    display: none;
+}
+#Superior{
+    display: flex;
+    align-items: center;
+}
+#Superior h4{
+    font-family: 'Acme', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Outfit', sans-serif;
+    margin-left: 130px;
+    margin-right: 70px;
+}
+#Icon_X{
+    color:black;
+    font-size:x-large;
+}
+#inferior hr{
+    width: 100%;
+    height: 3px;
+    border: none;
+    background-color: black;
+
+}
+#User_part{
+    display: flex;
+    padding-left: 30px;
+    align-items: center;
+}
+#User_logo_Small{
+    width: 2.5vw;
+    height: 2.5vw;
+    margin-right: 10px;
+}
+#Text_User{
+    font-family: 'Acme', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Outfit', sans-serif;
+}
+#Comments{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+#Comments textarea{
+    width: 80%;
+    height: 20%;
+    background: transparent;
+    resize: none;
+    border: transparent;
+    color:black;
+    font-family: 'Acme', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Outfit', sans-serif;
+    margin-bottom: 20px;
+}
+#Comments textarea:focus{
+    outline: none;
+}
+#Post_button{
+    margin-bottom: 30px;
+}
+.Post_desactivate{
+    width: 80%;
+    height: 30px;
+    background-color:rgba(240, 248, 255, 0.668);
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+.Post_activate{
+    width: 80%;
+    height: 30px;
+    background-color:hwb(240 0% 87% / 0.668);
+    border-radius: 10px;
+    color: aliceblue;
+    border: none;
+    outline: none;
+}
+.Comment{
+    background-color: rgba(240, 248, 255, 0.388);
+    width: 28vw;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    padding-right: 20px;
+    color: black;
+    float: right;
+    word-break:break-all;
+    margin-bottom: 15px;
+}
+.User_inf{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 5px;
+    width: 100%;
+}
+.User_Img{
+    width: 4vw;
+    height: 4vw;
+    padding-left: 20px;
+    padding-right: 5px;
+}
+.Text_Comment{
+    font-family: 'Acme', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Outfit', sans-serif;
+    color:#37023a;
+    margin-left: 20px;
+}
+
+.Post_Comment{
+    font-family: 'Acme', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Outfit', sans-serif;
+    color:black;
+    margin-left: 20px;
 }
